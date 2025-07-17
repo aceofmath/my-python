@@ -6,7 +6,7 @@ from  openpyxl.styles.fonts  import  Font
 path = r"C:\dev\workspace\py_test"
 
 input_file_name = "030107_test.xlsx"
-file_name = r"C:\dev\workspace\py_test\result\result.xlsx"
+file_name = r"C:\dev\workspace\py_test\result\030107.xlsx"
 
 # 파일 삭제
 try:

@@ -7,7 +7,7 @@ from  openpyxl.styles  import  Alignment
 from  openpyxl.styles  import  PatternFill
 from  openpyxl.styles  import  Protection
 
-file_name = "030106.xlsx"
+file_name = r"C:\dev\workspace\py_test\result\030106.xlsx"
 
 # 파일 삭제
 try:
