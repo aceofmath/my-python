@@ -33,4 +33,4 @@ for qty, id, desc in records:
     row_cells[1].text = id
     row_cells[2].text = desc
 
-document.save('예제 문서.docx')
+document.save(r'C:\dev\workspace\py_test\result\030403.docx')

@@ -12,7 +12,7 @@ def  main():
     sheet["A2"].value = "파이썬 업무 자동화"
 
 if  __name__== "__main__":
-    path = r"C:\dev\workspace\py_test\xlwings"
+    path = r"C:\dev\workspace\py_test\3.3.pywin32"
     #매크로 파일 설정
     xlwings.Book(path+"/"+"py1.xlsm").set_mock_caller()
     #main 함수 호출

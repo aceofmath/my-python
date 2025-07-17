@@ -47,7 +47,7 @@ table = soup.select_one("div#desktop-table table")
 
 if table:
     df = pd.read_html(str(table))[0]
-    df.to_excel("월배당ETF_목록.xlsx", index=False)
+    df.to_excel(r"C:\dev\workspace\py_test\resource\xlsx\월배당ETF_목록.xlsx", index=False)
     print("💾 엑셀 저장 완료: 월배당ETF_목록.xlsx")
 else:
     print("❌ 테이블을 찾지 못했습니다.")

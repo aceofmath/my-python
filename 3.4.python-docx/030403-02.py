@@ -1,6 +1,6 @@
 from docx import Document
 
-doc = Document(r'C:\dev\workspace\py_test\예제 문서.docx')
+doc = Document(r'C:\dev\workspace\py_test\resource\docx\예제 문서.docx')
 
 # ======================================================
 # 1. paragraph 인덱싱

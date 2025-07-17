@@ -4,7 +4,7 @@ excel = win32com.client.Dispatch("Excel.Application") #엑셀 프로그램을 �
 excel.Visible = True #실행과정 보이게
 
 #기존 존재하는 data파일을 Workbook 객체로 생성
-wb = excel.Workbooks.Open(r"C:\dev\workspace\py_test\xlwings\030306.xlsx")
+wb = excel.Workbooks.Open(r"C:\dev\workspace\py_test\3.3.pywin32\030306.xlsx")
 
 #활성화되어잇는 시트를 객체로 생성
 ws = wb.Worksheets("Sheet1") #Worksheet 설정

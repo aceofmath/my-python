@@ -2,7 +2,7 @@ import  openpyxl  as  op  #openpyxl 모듈 import
 import  win32com.client
 
 def  writeFunc():
-    wb = op.load_workbook(r"C:\dev\workspace\py_test\openpyxl_test.xlsx") #Workbook 객체 생성
+    wb = op.load_workbook(r"C:\dev\workspace\py_test\resource\xlsx\0301_test.xlsx")
     ws = wb["Sheet5"]
 
     row_max = ws.max_row  #최대 행값 저장
@@ -18,12 +18,12 @@ def  writeFunc():
 def  loadData():
     #엑셀 직접 실행시키고 저장 및 종료
     excel = win32com.client.Dispatch("Excel.Application")
-    temp_wb = excel.Workbooks.Open(r"C:\dev\workspace\py_test\openpyxl_test.xlsx")
+    temp_wb = excel.Workbooks.Open(r"C:\dev\workspace\py_test\resource\xlsx\0301_test.xlsx")
     temp_wb.Save()
     excel.quit()
 
     #openpyxl 통해 Workbook 객체 및 WorkSheet 객체 생성
-    wb = op.load_workbook(r"openpyxl_test.xlsx", data_only=True)
+    wb = op.load_workbook(r"C:\dev\workspace\py_test\resource\xlsx\0301_test.xlsx", data_only=True)
     ws = wb["Sheet5"]
 
     #빈 리스트 생성

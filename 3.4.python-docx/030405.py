@@ -3,7 +3,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
 
-doc = Document(r'C:\dev\workspace\py_test\예제 문서.docx')
+doc = Document(r'C:\dev\workspace\py_test\resource\docx\예제 문서.docx')
 
 # ======================================================
 # 1. 문단 정렬

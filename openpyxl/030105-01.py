@@ -1,6 +1,6 @@
 import  openpyxl  as  op  #openpyxl 모듈 import
 
-wb = op.load_workbook(r"C:\dev\workspace\py_test\openpyxl_test.xlsx")
+wb = op.load_workbook(r"C:\dev\workspace\py_test\resource\xlsx\0301_test.xlsx")
 ws = wb["Sheet5"]
 
 ws['M1'].value = "합계"

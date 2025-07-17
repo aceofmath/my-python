@@ -28,7 +28,7 @@ ws.Cells(1,1).Value = "사장님 몰래 하는 파이썬 업무자동화"
 # ======================================================
 
 # #path 지정
-# path = r"C:\dev\workspace\py_test\xlwings"
+# path = r"C:\dev\workspace\py_test\3.3.pywin32"
 
 # #저장
 # wb.SaveAs(path+"/test1.xlsx")
@@ -38,7 +38,7 @@ ws.Cells(1,1).Value = "사장님 몰래 하는 파이썬 업무자동화"
 # ======================================================
 
 #path 지정
-path = r"C:\dev\workspace\py_test\xlwings"
+path = r"C:\dev\workspace\py_test\3.3.pywin32"
 
 #저장
 wb.ExportAsFixedFormat(Type=0, Filename=path+"/test1.xlsx", From=1, To=1)

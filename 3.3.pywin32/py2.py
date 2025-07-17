@@ -1,7 +1,7 @@
 import  xlwings  as  xw
 
 #엑셀 매크로파일 열기(path는 매크로 파일이 있는 경로)
-wb = xw.Book(r"C:\dev\workspace\py_test\xlwings\py1.xlsm")
+wb = xw.Book(r"C:\dev\workspace\py_test\3.3.pywin32\py1.xlsm")
 
 #엑셀 VBA의 매크로 함수 'test'를 파이썬 함수로 지정
 macro_test = wb.macro('test1')

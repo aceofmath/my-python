@@ -10,10 +10,10 @@ doc = Document()
 # ======================================================
 
 # 사진의 크기를 Cm 단위로 설정하여 삽입
-doc.add_picture(r'C:\dev\workspace\py_test\python-docx\cat.jpg',width= Cm(16), height= Cm(9))
+doc.add_picture(r'C:\dev\workspace\py_test\resource\img\cat.jpg',width= Cm(16), height= Cm(9))
 
 # 사진의 크기를 Inch 단위로 설정하여 삽입
-# doc.add_picture(r'C:\dev\workspace\py_test\python-docx\cat.jpg',width= Inches(4), height= Inches(3))
+# doc.add_picture(r'C:\dev\workspace\py_test\resource\img\cat.jpg',width= Inches(4), height= Inches(3))
 
 
 # ======================================================
