@@ -2,7 +2,7 @@
 from PIL import  Image, ImageDraw, ImageFont
 
 # step2.워터마크 삽입할 이미지 불러오기
-img = Image.open('screen-3.jpg')
+img = Image.open(r'C:\dev\workspace\py_test\resource\img\screen-3.jpg')
 width, height = img.size
 
 # step3.그림판에 이미지를 그대로 붙여넣는 느낌의 Draw() 함수 
@@ -31,4 +31,4 @@ draw.text((x, y), text, fill='white', font=font)
 img.show()
 
 # step10.현재작업 경로에 완성 이미지 저장
-img.save("screen-3_make.jpg")
+img.save(r"C:\dev\workspace\py_test\result\030604.jpg")
