@@ -6,6 +6,7 @@ from selenium.common.exceptions import NoSuchElementException
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+import openpyxl
 
 # 크롬 설정
 chrome_options = Options()
@@ -47,7 +48,22 @@ table = soup.select_one("div#desktop-table table")
 
 if table:
     df = pd.read_html(str(table))[0]
-    df.to_excel(r"C:\dev\workspace\py_test\result\월배당ETF_목록.xlsx", index=False)
+    file_path = r"C:\dev\workspace\py_test\result\월배당ETF_목록.xlsx"
+    df.to_excel(file_path, index=False)
+
+    wb = openpyxl.load_workbook(file_path)
+    ws = wb.active  # 첫 번째 시트 선택 (필요시 ws = wb['시트명'])
+
+    # D열과 F열의 모든 셀에서 "원" 제거
+    for row in range(2, ws.max_row + 1):  # 2부터 시작하면 헤더는 건너뜀
+        for col in ['D', 'F']:
+            cell = ws[f"{col}{row}"]
+            if cell.value and isinstance(cell.value, str):  # 값이 있고 문자열일 때만
+                cell.value = cell.value.replace("원", "")
+    
+    wb.save(file_path)
+
+
     print("💾 엑셀 저장 완료: 월배당ETF_목록.xlsx")
 else:
     print("❌ 테이블을 찾지 못했습니다.")

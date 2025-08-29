@@ -19,6 +19,7 @@ def to_float(val):
 
 def update_possession_columns(sheet_name="월배당ETF_목록"):
     today = datetime.datetime.now().strftime("%Y-%m-%d")
+    # today = "2025-08-27"
     sheet = connect_to_google_sheet(sheet_name)
 
     try:
