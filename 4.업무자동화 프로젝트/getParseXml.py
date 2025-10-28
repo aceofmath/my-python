@@ -78,6 +78,6 @@ def save_to_excel(data, output_file="books.xlsx"):
 
 
 if __name__ == "__main__":
-    base_directory = r"C:\Users\PMG036\Documents\parseXml"  # 탐색 시작 경로 (필요에 따라 변경)
+    base_directory = r"C:\dev\workspace\py_test\resource\xml\parseXml"  # 탐색 시작 경로 (필요에 따라 변경)
     results = scan_xml_files(base_directory)
     save_to_excel(results, "books.xlsx")
